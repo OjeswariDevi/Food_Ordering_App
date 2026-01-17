@@ -1,0 +1,235 @@
+
+
+.cartPage {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff7f9;
+    min-height: 100vh;
+    padding: 3vh 2vw;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.cartContents {
+    width: 65%;
+    background-color: #fff0f5;
+    height: 83vh;
+    border: 1px solid #f5c5d9;
+    border-radius: 0.8rem;
+    padding: 4vh 2vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transition: all 0.4s ease;
+}
+
+.cartItem {
+    display: flex;
+    gap: 3vw;
+    animation: slideInUp 0.5s ease;
+}
+
+.cartItem img {
+    width: 25%;
+    height: 25vh;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    border: 2px solid #ffd6e8;
+    transition: transform 0.3s ease;
+}
+.cartItem img:hover {
+    transform: scale(1.05);
+}
+
+.cartItem-data h4 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    color: #ce5c90;
+    transition: color 0.3s ease;
+}
+
+.cartItem-data p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #9e6f88;
+    transition: color 0.3s ease;
+}
+
+.cartItem-data span h5 {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #af5f86;
+}
+
+.cartItem-data span h5 b {
+    font-weight: 600;
+}
+
+.cartItem-data button {
+    margin-top: 20px;
+    background-color: #fff0f5;
+    color: #d45e91;
+    border: 1px solid #f6c6db;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+.cartItem-data button:hover {
+    background-color: #d45e91;
+    color: #fff;
+}
+
+.cartItem-inputs {
+    display: flex;
+    gap: 40px;
+    justify-content: start;
+    align-items: center;
+}
+
+.cartItem-inputs span p {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    color: #b86d8d;
+}
+
+.cartItem-inputs div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 5px;
+}
+
+.cartItem-inputs input {
+    max-width: 40px;
+    padding-left: 10px;
+    font-size: 0.7rem;
+    height: 20px;
+    border-radius: 0.3rem;
+    border: 1px solid #f3b2cd;
+    background-color: #fffafc;
+    color: #893a65;
+    transition: border-color 0.3s ease;
+}
+.cartItem-inputs input:focus {
+    border-color: #d45e91;
+}
+
+.cartItem-inputs div button {
+    padding: 0 6px;
+    border: 1px solid #e6b8cb;
+    background-color: #fce6ee;
+    color: #d45e91;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.cartItem-inputs div button:hover {
+    background-color: #d45e91;
+    color: white;
+}
+
+.cartItem-input:last-child input {
+    max-width: 80px;
+    background-color: #fff3f8;
+}
+
+.cartPriceBody {
+    width: 24%;
+    height: fit-content;
+    background-color: #fff7fb;
+    padding: 3vh 2vw;
+    border: 1px solid #f1cadd;
+    border-radius: 0.6rem;
+    transition: all 0.4s ease;
+    animation: fadeInRight 0.6s ease;
+}
+
+.cartPriceBody h4 {
+    margin-bottom: 3vh;
+    color: #cc5c8c;
+}
+
+.cartPriceBody span {
+    display: flex;
+    justify-content: space-between;
+    color: #b26386;
+}
+
+.cartPriceBody span b {
+    font-weight: 600;
+}
+
+.cartPriceBody span p {
+    margin-bottom: 10px;
+}
+
+.cartPriceBody h5 {
+    font-weight: 400;
+    color: #aa4e7a;
+}
+
+.cartPriceBody h5 b {
+    font-weight: 600;
+}
+
+.cartPriceBody button {
+    width: 100%;
+    padding: 13px 0;
+    font-weight: 600;
+    margin: 3vh 0;
+    background-color: transparent;
+    border: 1.5px solid #d85782;
+    color: #d85782;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+.cartPriceBody button:hover {
+    background-color: #d85782;
+    color: #fff;
+}
+
+.modal-body .checkout-address section {
+    display: flex;
+    gap: 3%;
+}
+
+.span-child-1 {
+    width: 65%;
+}
+
+/* ========== Animations ========== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

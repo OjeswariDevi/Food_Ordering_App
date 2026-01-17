@@ -1,0 +1,143 @@
+
+.profilePage {
+    margin-top: 15vh;
+    display: flex;
+    background-color: #fff6f9; /* Creamy pink background */
+    min-height: 100vh;
+}
+
+.profileCard {
+    width: 21%;
+    margin: 5vh 2%;
+    padding: 2vh 1.5vw;
+    background-color: #fffbfe; /* Soft pastel base */
+    height: fit-content;
+    border: 1px solid #f3d4e0;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+}
+.profileCard:hover {
+    box-shadow: rgba(255, 173, 214, 0.3) 0px 8px 24px;
+}
+
+.profileCard span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.profileCard span h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: #cc5c8c;
+    font-weight: 500;
+}
+
+.profileCard span p {
+    margin: 0;
+    color: #a25972;
+}
+
+.profileOrders-container {
+    width: 75%;
+    height: fit-content;
+}
+
+.profileOrders-container h3 {
+    font-size: 1.5rem;
+    margin: 2vh 3vw;
+    color: #cc5c8c; /* Candy pink */
+}
+
+.profileOrders {
+    height: 70vh;
+    margin: 2vh 2vw;
+    padding: 2vh 1.5vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profileOrder {
+    display: flex;
+    gap: 30px;
+    background-color: #fff0f6; /* Light strawberry pink */
+    padding: 3vh;
+    border: 1px solid #f5d1df;
+    border-radius: 0.8rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.profileOrder:hover {
+    box-shadow: rgba(255, 182, 193, 0.3) 0px 8px 24px;
+}
+
+.profileOrder img {
+    height: 25vh;
+    width: 17vw;
+    border-radius: 0.4rem;
+    object-fit: cover;
+}
+
+.profileOrder-data {
+    width: 90%;
+}
+
+.profileOrder-data h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #a8506e;
+}
+
+.profileOrder-data ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 10px;
+}
+
+.profileOrder-data ul li {
+    margin: 0;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: #8d6878;
+}
+
+.profileOrder-data div {
+    display: flex;
+    gap: 20px;
+}
+
+.profileOrder-data div span p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #8d6b7a;
+}
+
+.profileOrder-data div span p b {
+    color: #ad4e77;
+}
+
+.profileOrder-data div span h5 {
+    font-size: 1rem;
+    color: #a75d7c;
+    margin-bottom: 20px;
+}
+
+.profileOrder-data div span h5 b {
+    color: #893c61;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 15px !important;
+}
+
+.rating-star-icons {
+    font-size: 1.2rem;
+}
+
+.star-rated {
+    color: #ff69b4; /* Hot pink stars */
+}

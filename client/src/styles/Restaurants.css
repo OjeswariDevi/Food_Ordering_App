@@ -1,0 +1,137 @@
+
+
+.restaurants-container {
+    height: fit-content;
+    display: flex;   
+    width: 100%;
+    margin-bottom: 10vh;
+    background: linear-gradient(to right, #fffaf0, #ffe6f7);
+    border-radius: 1rem;
+}
+
+.restaurants-filter {
+    width: 20%;
+    border-right: 1px solid #f6cde3;
+    border-top: 1px solid #f6cde3;
+    min-height: 88vh;
+    padding-left: 2vw;
+    padding-top: 3vh;
+    background-color: #fff0f6;
+    border-top-left-radius: 1rem;
+}
+
+.restaurants-filter h4 {
+    color: #ff5c8a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.restaurant-filters-body {
+    padding-left: 2vw;
+}
+
+.restaurant-filters-body h6 {
+    color: #d57ed9;
+    margin-bottom: 1vh;
+}
+
+.sub-filter-body {
+    padding-left: 1.5vw;
+    margin-bottom: 3vh;
+}
+
+.sub-filter-body label {
+    color: #b46085;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.sub-filter-body input {
+    cursor: pointer;
+}
+
+.restaurants-body {
+    width: 100%;
+    height: 88vh;
+    padding: 0vh 2vw;
+}
+
+.restaurants-body h3 {
+    color: #c94a9c;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2vh;
+}
+
+.restaurants {
+    margin-top: 3vh;
+    height: 80vh;
+    width: 100%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    padding-bottom: 5vh;
+    padding-top: 3vh;
+    gap: 1rem;
+}
+
+.restaurant-item {
+    display: flex;
+    justify-content: center;
+}
+
+.restaurant {
+    width: 90%;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    height: fit-content;
+    background-color: #fff6fc;
+    border: 1px solid #ffcce5;
+    transition: all 0.3s ease;
+    box-shadow: rgba(255, 143, 171, 0.08) 0px 2px 8px;
+}
+
+.restaurant:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(255, 143, 171, 0.25) 0px 12px 28px,
+                rgba(160, 231, 229, 0.15) 0px 2px 4px,
+                rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.restaurant img {
+    width: 90%;
+    margin-left: 5%;
+    height: 30vh;
+    border-radius: 0.8rem;
+    object-fit: cover;
+    box-shadow: rgba(255, 143, 171, 0.15) 0px 4px 12px;
+}
+
+.restaurant .restaurant-data {
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+.restaurant .restaurant-data h6 {
+    margin: 0;
+    font-size: 1rem;
+    color: #a14aa2;
+}
+
+.restaurant .restaurant-data p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #79546e;
+}
+
+.restaurant .restaurant-data h5 {
+    font-size: 1.1rem;
+    color: #ff5c8a;
+    margin: 0.5rem 0;
+}
+
+.restaurant .restaurant-data h5 p {
+    font-size: 0.8rem;
+    margin: 0;
+}

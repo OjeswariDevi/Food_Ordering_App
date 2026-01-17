@@ -1,0 +1,52 @@
+
+
+
+ .all-users-page {
+    background: linear-gradient(to right, #fff1e6, #ffe4e1); /* Soft gradient */
+    height: 100vh;
+    width: 100%;
+    padding: 15vh 3vw 3vh 3vw;
+}
+
+.all-users-page h3 {
+    color: #d35400; /* Vibrant coral orange */
+}
+
+.user-cards {
+    margin-top: 4vh;
+    height: 70vh;
+    width: 70vw;
+    padding: 2vh 1vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-card {
+    color: #5c3a2e;
+    display: flex;
+    gap: 40px;
+    background-color: #fff0e6; /* Light coral card */
+    padding: 3vh 2vw;
+    width: 65vw;
+    border-radius: 0.8rem;
+    box-shadow: rgba(255, 102, 102, 0.15) 0px 4px 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    box-shadow: rgba(255, 102, 102, 0.3) 0px 8px 24px;
+}
+
+.user-card span h5 {
+    font-weight: 500;
+    color: #b3472c;
+    margin: 0;
+}
+
+.user-card span p {
+    color: #935e3a;
+    margin: 0;
+    font-size: 0.9rem;
+}

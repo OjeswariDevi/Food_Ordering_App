@@ -1,0 +1,123 @@
+
+.AuthenticatePage {
+    width: 100%;
+    height: 100vh;
+    padding-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffe1f0, #d3efff, #fff6cc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.authForm {
+    padding: 25px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+/* Entry animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.authForm h2 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #5b00aa;
+    font-size: 2rem;
+}
+
+.authFormInputs {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.authFormInputs label {
+    color: #3c005f;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.authFormInputs input,
+.authForm select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 1px solid #b892f0;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #2f0057;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.authFormInputs input:focus,
+.authForm select:focus {
+    border-color: #9f6eea;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(159, 110, 234, 0.3);
+    outline: none;
+}
+
+.authForm button {
+    background: linear-gradient(135deg, #d74ec5, #725eff);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    height: 50px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.authForm button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(127, 67, 212, 0.4);
+}
+
+.authForm p {
+    margin-top: 5%;
+    color: #4e005b;
+    font-weight: 500;
+}
+
+.authForm p span {
+    color: #7e00a6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.authForm p span:hover {
+    color: #9b00d4;
+    text-decoration: underline;
+}

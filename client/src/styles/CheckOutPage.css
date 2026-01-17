@@ -1,0 +1,104 @@
+/* Modal Background */
+.modal-content {
+  background: linear-gradient(145deg, #fffaf0, #f7f1e5);
+  border-radius: 1rem;
+  animation: fadeScaleIn 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(190, 128, 64, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fade Scale Animation */
+@keyframes fadeScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #fff1c1;
+  color: #7a4e1d;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #a05a1c;
+}
+
+/* Body Styling */
+.modal-body {
+  padding: 1.8rem;
+  background-color: #fffdf8;
+}
+
+/* Form Inputs */
+.form-floating input,
+.form-floating select {
+  border: 1px solid #c9b37d;
+  background-color: #fefae0;
+  border-radius: 0.5rem;
+  color: #5b4025;
+}
+
+.form-floating input:focus,
+.form-floating select:focus {
+  border-color: #d89b32;
+  box-shadow: 0 0 5px rgba(226, 163, 61, 0.5);
+}
+
+/* Form Labels */
+label {
+  color: #7a5c2c;
+}
+
+/* Section Titles */
+.checkout-address h4,
+.checkout-payment-method h4 {
+  color: #8f4d15;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Modal Footer */
+.modal-footer {
+  background-color: #fff7e8;
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1.2rem;
+}
+
+/* Buttons */
+.modal-footer .btn-secondary {
+  background-color: #e0c5a1;
+  color: #5e4124;
+  border: none;
+  font-weight: 500;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #c7a87f;
+}
+
+.modal-footer .btn-primary {
+  background-color: #d9891b;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #b86d13;
+}
+
+/* Smooth transitions for inputs/buttons */
+.modal-content * {
+  transition: all 0.25s ease-in-out;
+}
