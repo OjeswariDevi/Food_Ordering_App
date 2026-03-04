@@ -131,3 +131,13 @@ Feel free to fork the repository and submit pull requests to improve the platfor
 ## ✨ Acknowledgments
 
 Inspired by popular platforms like Swiggy and Zomato for their seamless user experience and food ordering flow.
+
+---
+
+## 👩‍💻 Author
+
+**Ojeswari Devi**  
+B.Tech Computer Science Engineering  
+Full Stack Web Developer  
+
+GitHub: https://github.com/OjeswariDevi
