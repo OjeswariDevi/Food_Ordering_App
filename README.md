@@ -1,4 +1,3 @@
-# Food_Ordering_App
 # OrderOnTheGo-Your-On-Demand-Food-Ordering-Solution
 
 
